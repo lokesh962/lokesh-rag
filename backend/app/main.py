@@ -24,8 +24,8 @@ async def startup():
 # ---------- CORS ----------
 
 origins = [
-    "http://localhost:5173",          # Local Vite
-    "https://lokesh-rag.web.app",     # Firebase Production
+    "http://localhost:5173",
+    "https://documind-d3a0a.web.app",
 ]
 
 app.add_middleware(
