@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+python-multipart
+groq
+qdrant-client
+supabase
+pypdf
+numpy
+requests
+httpx
