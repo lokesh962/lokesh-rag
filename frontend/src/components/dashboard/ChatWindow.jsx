@@ -14,7 +14,7 @@ export default function ChatWindow({ messages }) {
     return (
       <div className="flex h-full min-h-0 flex-1 items-center justify-center overflow-hidden px-4 py-6 sm:px-6 sm:py-8">
         <div className="text-center">
-          <h1 className="mb-3 text-3xl font-bold text-white sm:mb-4 sm:text-4xl">🤖 DocuMind AI</h1>
+          <h1 className="mb-3 text-3xl font-bold text-white sm:mb-4 sm:text-4xl">🤖 RagNove AI</h1>
           <p className="text-base text-gray-400 sm:text-lg">Upload a PDF and ask anything about it.</p>
         </div>
       </div>

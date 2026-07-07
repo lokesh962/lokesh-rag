@@ -17,7 +17,7 @@ export default function Topbar({ onMenuToggle }) {
           <Menu size={18} />
         </button>
 
-        <div className="mr-2 flex-1 max-w-xl sm:mr-4">
+        {/* <div className="mr-2 flex-1 max-w-xl sm:mr-4">
           <div className="relative">
             <Search
               size={18}
@@ -25,10 +25,10 @@ export default function Topbar({ onMenuToggle }) {
             />
             <input
               placeholder="Search..."
-              className="w-full rounded-xl border border-white/10 bg-white/5 py-2.5 pl-12 pr-4 text-sm text-white outline-none transition focus:border-cyan-400 sm:py-3"
+              className=" rounded-xl border border-white/10 bg-white/5 py-2.5 pl-12 pr-3 text-sm text-white outline-none transition focus:border-cyan-400 sm:py-3"
             />
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="flex items-center gap-2 sm:gap-4 lg:gap-6">
