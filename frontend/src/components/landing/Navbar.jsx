@@ -2,11 +2,12 @@ import { useEffect, useState } from "react";
 import { Menu, X, BrainCircuit } from "lucide-react";
 import { motion } from "framer-motion";
 import Button from "../ui/Button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [scroll, setScroll] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,7 +41,7 @@ export default function Navbar() {
           </div>
 
           <div>
-            <h2 className="font-bold text-xl">DocuMind AI</h2>
+            <h2 className="font-bold text-xl">RagNove AI</h2>
 
             <p className="text-xs text-gray-400">AI Document Assistant</p>
           </div>
@@ -67,7 +68,9 @@ export default function Navbar() {
             <Button variant="ghost">Login</Button>
           </Link>
 
-          <Button>Get Started</Button>
+          <Button onClick={() => navigate("/login")}>
+    Get Started
+</Button>
         </div>
 
         {/* Mobile */}

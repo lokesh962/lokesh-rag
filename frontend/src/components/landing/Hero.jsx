@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+
 import {
   UploadCloud,
   Database,
@@ -30,6 +32,10 @@ const steps = [
 ];
 
 export default function Hero() {
+
+  const navigate = useNavigate();
+
+  
   return (
     <section className="relative overflow-hidden pt-36 pb-24">
 
@@ -86,19 +92,16 @@ export default function Hero() {
 
           <div className="flex gap-5 mt-10 flex-wrap">
 
-            <Button>
+            <Button onClick={() => navigate("/login")}>Get Started</Button>
 
-              Get Started
+  <Button
+    variant="secondary"
+    onClick={() => window.open("https://lokesh-rag.web.app", "_blank")}
+  >
+    Live Demo
+  </Button>
 
-            </Button>
-
-            <Button variant="secondary">
-
-              Live Demo
-
-            </Button>
-
-          </div>
+</div>
 
           <div className="grid grid-cols-3 gap-8 mt-14">
 

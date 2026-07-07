@@ -12,7 +12,7 @@ export default function ChatInput({ onSend, loading }) {
   };
 
   return (
-    <div className="flex items-center gap-3 border-t border-gray-700/80 bg-slate-900/90 p-4 sm:p-5">
+    <div className="flex flex-col gap-3 border-t border-gray-700/80 bg-slate-900/90 p-3 sm:flex-row sm:items-center sm:gap-3 sm:p-4 lg:p-5">
       <input
         value={question}
         onChange={(e) => setQuestion(e.target.value)}
@@ -22,13 +22,13 @@ export default function ChatInput({ onSend, loading }) {
           }
         }}
         placeholder="Ask anything..."
-        className="flex-1 rounded-xl border border-gray-700 bg-[#111827] px-5 py-3 text-white outline-none transition focus:border-cyan-400"
+        className="w-full rounded-xl border border-gray-700 bg-[#111827] px-4 py-3 text-sm text-white outline-none transition focus:border-cyan-400 sm:flex-1 sm:px-5 sm:text-base"
       />
 
       <button
         onClick={handleSend}
         disabled={loading}
-        className="rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 px-4 py-3 text-white transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-60"
+        className="flex items-center justify-center rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 px-4 py-3 text-white transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
       >
         <Send size={18} />
       </button>

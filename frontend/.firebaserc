@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "documind-d3a0a"
-  }
+  },
+  "targets": {
+    "documind-d3a0a": {
+      "hosting": {
+        "production": [
+          "lokesh-rag"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

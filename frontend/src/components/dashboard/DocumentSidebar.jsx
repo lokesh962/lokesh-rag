@@ -34,15 +34,12 @@ export default function DocumentSidebar({
   };
 
   return (
-    <div className="flex w-80 flex-col border-r border-gray-700 bg-[#111827]">
-
-      <div className="border-b border-gray-700 p-5">
-        <h2 className="text-xl font-semibold text-white">
-          📂 Documents
-        </h2>
+    <div className="flex w-full shrink-0 flex-col border-b border-gray-700 bg-[#111827] md:w-80 md:border-b-0 md:border-r">
+      <div className="border-b border-gray-700 p-4 sm:p-5">
+        <h2 className="text-lg font-semibold text-white sm:text-xl">📂 Documents</h2>
       </div>
 
-      <div className="flex-1 overflow-y-auto p-3">
+      <div className="flex-1 min-h-0 overflow-y-auto p-3">
 
         {loading ? (
           <p className="text-gray-400">
