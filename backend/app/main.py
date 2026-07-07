@@ -26,6 +26,7 @@ async def startup():
 origins = [
     "http://localhost:5173",
     "https://documind-d3a0a.web.app",
+    "https://lokesh-rag.web.app",
 ]
 
 app.add_middleware(
