@@ -81,7 +81,7 @@ export default function Features() {
 
                     <h2 className="mt-5 text-5xl font-bold">
 
-                        Why Choose DocuMind AI?
+                        Why Choose RagNove AI?
 
                     </h2>
 

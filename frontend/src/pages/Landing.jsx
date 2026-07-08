@@ -19,6 +19,10 @@ export default function Landing() {
 
       <Workflow />
 
+      <footer className=" border-t border-white/10 bg-slate-950/90 px-4 py-3 text-center text-sm text-slate-300 sm:px-6 fixed bottom-0 w-full">
+        Developed by Lokesh Singh
+      </footer>
+
       {/* <Footer /> */}
 
     </div>

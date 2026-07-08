@@ -1,6 +1,8 @@
 import axios from "axios";
 import { getUserId } from "../utils/user";
 
+
+
 const api = axios.create({
   baseURL: "https://lokesh-rag-1.onrender.com",
   headers: {
